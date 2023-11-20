@@ -31,7 +31,7 @@ def main():
     # 何時何分何秒も含めて表示
     # 例：2021年1月1日 12:34
     # 日本時間に変換する
-    st.write(f'現在時刻は{to_japan_time(today).strftime("%Y年%m月%d日 %H:%M:%S")}です。')
+    st.write(f'現在時刻は{to_japan_time(today).strftime("%Y年%m月%d日 %H時%M分")}です。')
     remaining_days = calc_remaining_days()
     st.write(f'土日を含めてあと{remaining_days}日です。')
     # 表示
