@@ -22,7 +22,8 @@ def main():
     st.title('卒論の締め切りまでの残り日数')
     st.write('2024年1月9日までの残り日数を表示します。')
     today = datetime.datetime.today()
-    st.write(f'今日は{today:%Y年%m月%d日}です。')
+    # 何時何分何秒も含めて表示
+    st.write(f'今日は{today}です。')
     remaining_days = (DEADLINE - today).days
     st.write(f'土日を含めてあと{remaining_days}日です。')
     # 表示
