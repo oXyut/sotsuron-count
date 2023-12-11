@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit_calendar as st_calendar
 import datetime
 import pytz
 
@@ -25,6 +26,8 @@ def main():
     st.write(f'土日を含めてあと{remaining_days}日です。')
     remaining_days_without_weekend = calc_remaining_days_without_weekend(today, remaining_days)
     st.write(f'土日を除いてあと{remaining_days_without_weekend}日です。')
+
+    st_calendar.calendar()
 
 if __name__ == '__main__':
     main()
